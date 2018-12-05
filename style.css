@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #b9b9b9;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #b9b9b9;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #b9b9b9;
+}
+
 body {
 	background: url("background2.png");
 	background-position: center center;
@@ -45,6 +58,37 @@ body {
   border-radius: 5px;
   background-color: rgba(68,40,160,0.7);
 
+}
+
+
+.flexbox {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  justify-content: space-around;
+  margin-left: 5%;
+  align-items: center;
+  font-family: 'Lato';
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+.grid-left {
+  justify-self: end;
+}
+
+.input-field {
+  margin-left: 20px;
+  width: 70%;
+  border: none;
+  border-left: 3px solid #00e5ff;
+  background-color: rgb(56, 38, 121);
+  padding: 10px 15px;
+  margin-right: 3%;
+  color: white;
+  font-size: 16px;
 }
 
 #question {

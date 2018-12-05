@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html>  
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset=UTF-8">
       	<link rel="stylesheet" href="style.css" type="text/css">
@@ -8,9 +8,17 @@
    <body>
    		<header id="header">Website<br>feedback</header>
    		<main>
-   			<p id="introduction">Thank you for visiting our Website.<br>By filling out this 5 minute survey, you will help us continue to offer simplicity of use and customer satisfaction.</p>
+   			<p id="introduction">Thank you for visiting our website.<br>By filling out this 5 minute survey, you will help us continue to offer simplicity of use and customer satisfaction.</p>
         <div id="survey_box">
           <form id="survey_form">
+            <div class="flexbox">
+              <label id="name-label" class="grid-left" for="name">Name: </label>
+              <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+              <label id="email-label" class="grid-left" for="email">Email: </label>
+              <input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+              <label id="number-label" class="grid-left" for="age">Age: </label>
+              <input type="number" name="age" id="number" min="1" max="130" class="input-field" placeholder="Age">
+            </div>
             <p id="question">How easy is it to navigate our website?</p>
             <label class="container">Extremely easy
               <input type="radio" value="1" checked="checked" name="navigate">
@@ -59,123 +67,123 @@
             </div>
             <p id="question">How clear is the information available on our website?</p>
             <label class="container">Extremely clear
-              <input type="radio" checked="checked" name="information_clear">
+              <input type="radio" value="1" checked="checked" name="information_clear">
               <span class="checkmark"></span>
             </label>
             <label class="container">Very clear
-              <input type="radio" name="information_clear">
+              <input type="radio" value="2" name="information_clear">
               <span class="checkmark"></span>
             </label>
             <label class="container">Moderately clear
-              <input type="radio" name="information_clear">
+              <input type="radio" value="3" name="information_clear">
               <span class="checkmark"></span>
             </label>
             <label class="container">Slightly clear
-              <input type="radio" name="information_clear">
+              <input type="radio" value="4" name="information_clear">
               <span class="checkmark"></span>
             </label> 
             <label class="container">Not at all clear
-              <input type="radio" name="information_clear">
+              <input type="radio" value="5" name="information_clear">
               <span class="checkmark"></span>
             </label>
             <div class="strip">
             </div>
             <p id="question">How up-to-date is the content on our website?</p>
             <label class="container">Extremely up-to-date
-              <input type="radio" checked="checked" name="information_up-to-date">
+              <input type="radio" value="1" checked="checked" name="information_up-to-date">
               <span class="checkmark"></span>
             </label>
             <label class="container">Very up-to-date
-              <input type="radio" name="information_up-to-date">
+              <input type="radio" value="2" name="information_up-to-date">
               <span class="checkmark"></span>
             </label>
             <label class="container">Up-to-date
-              <input type="radio" name="information_up-to-date">
+              <input type="radio" value="3" name="information_up-to-date">
               <span class="checkmark"></span>
             </label>
             <label class="container">Slightly up-to-date
-              <input type="radio" name="information_up-to-date">
+              <input type="radio" value="4" name="information_up-to-date">
               <span class="checkmark"></span>
             </label> 
             <label class="container">Not at all up-to-date
-              <input type="radio" name="information_up-to-date">
+              <input type="radio" value="5" name="information_up-to-date">
               <span class="checkmark"></span>
             </label>
             <div class="strip">
             </div>
             <p id="question">How visually appealing is our website?</p>
             <label class="container">Extremely appealing
-              <input type="radio" checked="checked" name="website_appealing">
+              <input type="radio" value="1" checked="checked" name="website_appealing">
               <span class="checkmark"></span>
             </label>
             <label class="container">Very appealing
-              <input type="radio" name="website_appealing">
+              <input type="radio" value="2" name="website_appealing">
               <span class="checkmark"></span>
             </label>
             <label class="container">Moderately appealing
-              <input type="radio" name="website_appealing">
+              <input type="radio" value="3" name="website_appealing">
               <span class="checkmark"></span>
             </label>
             <label class="container">Slightly appealing
-              <input type="radio" name="website_appealing">
+              <input type="radio" value="4" name="website_appealing">
               <span class="checkmark"></span>
             </label> 
             <label class="container">Not at all appealing
-              <input type="radio" name="website_appealing">
+              <input type="radio" value="5" name="website_appealing">
               <span class="checkmark"></span>
             </label>
             <div class="strip">
             </div>
             <p id="question">Overall satisfaction opinion. Were you?</p>
             <label class="container">Extremely satisfied
-              <input type="radio" checked="checked" name="satisfaction">
+              <input type="radio" value="1" checked="checked" name="satisfaction">
               <span class="checkmark"></span>
             </label>
             <label class="container">Moderately appealing
-              <input type="radio" name="satisfaction">
+              <input type="radio" value="2" name="satisfaction">
               <span class="checkmark"></span>
             </label>
             <label class="container">Slightly satisfied
-              <input type="radio" name="satisfaction">
+              <input type="radio" value="3" name="satisfaction">
               <span class="checkmark"></span>
             </label>
             <label class="container">Indifferent
-              <input type="radio" name="satisfaction">
+              <input type="radio" value="4" name="satisfaction">
               <span class="checkmark"></span>
             </label> 
             <label class="container">Slightly dissatisfied
-              <input type="radio" name="satisfaction">
+              <input type="radio" value="5" name="satisfaction">
               <span class="checkmark"></span>
             </label>
             <label class="container">Moderatly dissatisfied
-              <input type="radio" name="satisfaction">
+              <input type="radio" value="6" name="satisfaction">
               <span class="checkmark"></span>
             </label>
             <label class="container">Extremely dissatisfied
-              <input type="radio" name="satisfaction">
+              <input type="radio" value="7" name="satisfaction">
               <span class="checkmark"></span>
             </label>
             <div class="strip">
             </div>
             <p id="question">How likely are you to recommend our website to others?</p>
             <label class="container">Extremely likely
-              <input type="radio" checked="checked" name="recommend">
+              <input type="radio" value="1" checked="checked" name="recommend">
               <span class="checkmark"></span>
             </label>
             <label class="container">Very likely
-              <input type="radio" name="recommend">
+              <input type="radio" value="2" name="recommend">
               <span class="checkmark"></span>
             </label>
             <label class="container">Moderately likely
-              <input type="radio" name="recommend">
+              <input type="radio" value="3" name="recommend">
               <span class="checkmark"></span>
             </label>
             <label class="container">Slightly likely
-              <input type="radio" name="recommend">
+              <input type="radio" value="4" name="recommend">
               <span class="checkmark"></span>
             </label> 
             <label class="container">Not at all likely
-              <input type="radio" name="recommend">
+              <input type="radio" value="5" name="recommend">
               <span class="checkmark"></span>
             </label>
             <button id="submit" type="submit">Submit</button>
