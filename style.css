@@ -143,6 +143,21 @@ body {
 
 }
 
+#submit {
+  background-color: rgb(56, 38, 121);
+  border: 2px solid #00e5ff;
+  border-radius: 4px;
+  color: #00e5ff;
+  padding: 1%;
+  font-size: 18px;
+  height: 40px;
+  width: 96px;
+  margin: auto;
+  margin-bottom: 3%;
+  font-family: 'Lato';
+  font-weight: 600;
+}
+
   @media (max-width: 920px){
     #survey_box {
       width: 80%;
@@ -155,6 +170,15 @@ body {
       border: none;
       border-radius: 0;
       background-color: rgba(68,40,160,0.9);
+    }
+
+    #question {
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+
+    body {
+        background-size: auto auto;
     }
 
   }
