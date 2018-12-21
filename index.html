@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>  
+<html> 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset=UTF-8">
       	<link rel="stylesheet" href="style.css" type="text/css">
      	<title>Survey page</title>
 	</head>
    <body>
-   		<header id="header">Website<br>feedback</header>
+   		<h1 id="title">Website<br>feedback</h1>
    		<main>
-   			<p id="introduction">Thank you for visiting our website.<br>By filling out this 5 minute survey, you will help us continue to offer simplicity of use and customer satisfaction.</p>
+   			<p id="description">Thank you for visiting our website.<br>By filling out this 5 minute survey, you will help us continue to offer simplicity of use and customer satisfaction.</p>
         <div id="survey_box">
-          <form id="survey_form">
+          <form id="survey-form">
             <div class="flexbox">
               <label id="name-label" class="grid-left" for="name">Name: </label>
               <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
@@ -18,6 +18,35 @@
               <input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
               <label id="number-label" class="grid-left" for="age">Age: </label>
               <input type="number" name="age" id="number" min="1" max="130" class="input-field" placeholder="Age">
+              <label id="browser-label" class="grid-left" for="name">Your browser </label>
+              <select id="dropdown" name="browser-dropdown">
+			    <option disabled value>Select an option</option>
+			    <option  value="chrome">Chrome</option>
+			    <option value="firefox">Firefox</option>
+			    <option value="opera">Opera</option>
+			    <option value="safari">Safari</option>
+			    <option value="edge">Microsoft Edge</option>
+			    <option value="other">Other</option>
+			  </select>
+            </div>
+            <p id="question">What devices do you use to view our site?</p>
+            <label class="container-checkbox">Smartphone
+              <input type="checkbox" value="Smartphone">
+              <span class="checkmark-checkbox"></span>
+            </label>
+            <label class="container-checkbox">Tablet
+              <input type="checkbox" value="Tablet">
+              <span class="checkmark-checkbox"></span>
+            </label>
+            <label class="container-checkbox">Computer
+              <input type="checkbox" value="Computer">
+              <span class="checkmark-checkbox"></span>
+            </label>
+            <label class="container-checkbox">Other
+              <input type="checkbox" value="Other">
+              <span class="checkmark-checkbox"></span>
+            </label>
+            <div class="strip">
             </div>
             <p id="question">How easy is it to navigate our website?</p>
             <label class="container">Extremely easy
@@ -186,9 +215,14 @@
               <input type="radio" value="5" name="recommend">
               <span class="checkmark"></span>
             </label>
+            <div class="strip">
+            </div>
+            <p id="question">Additional comments</p>
+            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
             <button id="submit" type="submit">Submit</button>
           </form>
         </div>
    		</main>
    	</body>
 </html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
